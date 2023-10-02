@@ -6,7 +6,7 @@ public class Main {
 
 	public static void main(String[] arguments) {
 		SchokoladenCookie schoki = new SchokoladenCookie();
-		MacadamiaCookie queen = new MacadamiaCookie();
+		Cookie queen = new MacadamiaCookie();
 		
 		schoki.klicke();
 		queen.klicke();
@@ -15,6 +15,7 @@ public class Main {
 			schoki,
 			queen
 		);
+		
 		meine.forEach(Cookie::klicke);
 //		for (Cookie each : meine) {
 //			each.klicke();
