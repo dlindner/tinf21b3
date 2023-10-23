@@ -1,5 +1,7 @@
 package de.dhbw.tinf21b3.error;
 
+import java.util.Optional;
+
 public class LeereDatenbank implements Datenbank {
 
 	public LeereDatenbank() {
@@ -7,7 +9,7 @@ public class LeereDatenbank implements Datenbank {
 	}
 	
 	@Override
-	public Benutzer findeFür(String login) {
-		return null;
+	public Optional<Benutzer> findeFür(String login) {
+		return Optional.empty();
 	}
 }
